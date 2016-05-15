@@ -5,6 +5,7 @@ import shallowCompare from 'react-addons-shallow-compare'
 import {shallowCompareWithoutFunctions} from '../../src'
 
 const HREF = `https://github.com/garbles/shallow-compare-without-functions`
+const DEMO = `https://github.com/garbles/shallow-compare-without-functions/blob/master/demo/src/index.js`
 
 function createMarkup ({onClickUp, onClickDown, last, title}) {
   return (
@@ -62,11 +63,15 @@ class App extends React.Component {
   render () {
     return (
       <div>
+        <h1 style={{color: `red`}}>shallow-compare-without-functions</h1>
         <div>
           <strong>Open your console</strong>
         </div>
         <div>
-          See the source code <a href={HREF}>here</a>
+          See the source code for the project <a href={HREF}>here</a>
+        </div>
+        <div>
+          and the demo code <a href={DEMO}>here</a>
         </div>
         <NoFn
           onClickUp={this.setUp.bind(this, `noFnText`)}

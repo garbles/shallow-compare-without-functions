@@ -3,9 +3,10 @@
 [![Travis][build-badge]][build]
 
 Just like [React addons `shallowCompare`](https://facebook.github.io/react/docs/shallow-compare.html) except it ignores functions.
-It's not uncommon to want to bind to a instance function or wrap and action creator. The problem with doing this is that even
-if the value props don't change, using a new function will trigger a re-render, making it a bad idea to use `shallowCompare` in that case.
-Additionally, the actual behavior of those functions almost never changes.
+
+It's not uncommon to want to bind to a instance function or wrap an action creator; however, even if value props didn't change,
+`shallowCompare` will suggest a re-render because function props have changed. Additionally, the actual behavior of those
+functions almost never changes, so a re-render is not necessary.
 
 See [this demo](http://shallow-compare-without-functions.surge.sh) for an example.
 
