@@ -58,7 +58,7 @@ class MyComponent extends React.Component {
 
 It's not uncommon to want to bind to an instance function or wrap an action creator before passing it to a child component; however, even if the value props of the child component didn't change,
 `shallowCompare` will suggest a re-render because a function prop has changed. The actual behavior of those
-functions almost never actually changes on its own, so a re-render is not necessary.
+functions almost never actually changes on their own, so a re-render is not necessary.
 
 See [this demo](http://shallow-compare-without-functions.surge.sh) for an example.
 
