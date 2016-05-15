@@ -1,0 +1,38 @@
+{
+  "name": "shallow-compare-without-functions",
+  "version": "0.0.1",
+  "description": "Shallow compare for React components where functions are excluded",
+  "main": "lib/index.js",
+  "files": [
+    "es6",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve",
+    "test": "nwb test",
+    "test:watch": "nwb test --server",
+    "deploy:demo": "surge demo/dist/ shallow-compare-without-functions.surge.sh",
+    "release:patch": "nwb build && npm version patch && npm publish && npm run deploy:demo"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "0.14.x"
+  },
+  "devDependencies": {
+    "nwb": "0.9.x",
+    "react": "0.14.x",
+    "react-addons-shallow-compare": "15.0.2",
+    "react-dom": "0.14.x",
+    "surge": "0.18.0"
+  },
+  "author": "Gabe Scholz",
+  "license": "MIT",
+  "repository": "https://github.com/garbles/shallow-compare-without-functions",
+  "keywords": [
+    "react-component",
+    "shallow-compare"
+  ]
+}
