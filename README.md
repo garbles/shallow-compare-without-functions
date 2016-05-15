@@ -3,7 +3,7 @@
 [![Travis][build-badge]][build]
 
 Just like [React addons `shallowCompare`](https://facebook.github.io/react/docs/shallow-compare.html) except it ignores functions.
-Have you ever found yourself doing the below?
+Have you ever found yourself doing the following?
 
 ```js
 class MyComponent extends React.Component {
