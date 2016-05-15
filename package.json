@@ -1,6 +1,6 @@
 {
   "name": "shallow-compare-without-functions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shallow compare for React components where functions are excluded",
   "main": "lib/index.js",
   "files": [
